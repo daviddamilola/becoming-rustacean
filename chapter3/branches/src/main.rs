@@ -1,12 +1,7 @@
 
 fn main() {
-    // let number = 3;
-    // check_number(number);
-    // loop_example();
-    // while_loop();
-    // for_loop()
-    // loop_return()
-    twelve_days_of_christmas()
+    let fib_5 = fibonacci(7);
+    println!("fib_5: {}", fib_5);
 }
 
 
