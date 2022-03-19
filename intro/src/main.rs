@@ -18,7 +18,7 @@ fn main() {
     
         //convert string input to integer
     
-        let guess: u32 = match guess.trim().parse() {
+        let guess: u32 = match guess.trim().parse() {// shadow initial guess variable, parse the input to an integer of type u32
             Ok(num) => num,
             Err(_) => continue,
         };
