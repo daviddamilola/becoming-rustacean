@@ -1,7 +1,8 @@
 
 fn main() {
-    let fib_5 = fibonacci(7);
-    println!("fib_5: {}", fib_5);
+    // let fib_5 = fibonacci(7);
+    // println!("fib_5: {}", fib_5);
+    twelve_days_of_christmas()
 }
 
 
@@ -67,8 +68,8 @@ fn fibonacci(n: u32) -> u32 {
 }
 
 fn twelve_days_of_christmas () {
-    let gifts = vec!["a partridge in a pear tree", "two turtle doves", "three french hens", "four calling birds", "five golden rings", "six geese a-laying", "seven swans a-swimming", "eight maids a-milking", "nine ladies dancing", "ten lords a-leaping", "eleven pipers piping", "twelve drummers drumming"];
-    let days = vec!["first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth", "ninth", "tenth", "eleventh", "twelfth"];
+    let gifts = ["a partridge in a pear tree", "two turtle doves", "three french hens", "four calling birds", "five golden rings", "six geese a-laying", "seven swans a-swimming", "eight maids a-milking", "nine ladies dancing", "ten lords a-leaping", "eleven pipers piping", "twelve drummers drumming"];
+    let days = ["first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth", "ninth", "tenth", "eleventh", "twelfth"];
     for (i, day) in days.iter().enumerate()  {
         println!("On the {} day of Christmas my true love sent to me", day);
         let mut current_gift = &gifts[0..i+1];
