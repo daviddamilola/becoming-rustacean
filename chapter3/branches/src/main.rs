@@ -72,7 +72,7 @@ fn twelve_days_of_christmas () {
     let days = ["first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth", "ninth", "tenth", "eleventh", "twelfth"];
     for (i, day) in days.iter().enumerate()  {
         println!("On the {} day of Christmas my true love sent to me", day);
-        let mut current_gift = &gifts[0..i+1];
+        let current_gift = &gifts[0..i+1];
         let y = current_gift.iter().rev();
         for elem in y {
             println!("{}", elem);
